@@ -10,9 +10,9 @@ defineEmits(['go-home'])
       <p>Vous avez entré le bon code.</p>
       
       <div class="secret-content">
-        <h2>Contenu Exclusif</h2>
-        <p>Ceci est une page d'exemple qui sera modifiée plus tard.</p>
-        <p>Vous pouvez ajouter ici tout le contenu que vous souhaitez afficher après la saisie du code.</p>
+        <h2>Pour accéder à la prochaine étape :</h2>
+        <p>Envoyez "Saucisse" à votre bien-aimé.</p>
+        <p>Tip : Pensez à noter vos codes quelque part afin de mieux retrouver les éventuellesinformations dont vous aurez besoin plus tard.</p>
       </div>
 
       <button @click="$emit('go-home')" class="back-btn">
@@ -28,7 +28,6 @@ defineEmits(['go-home'])
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
   padding: 2rem;
 }
