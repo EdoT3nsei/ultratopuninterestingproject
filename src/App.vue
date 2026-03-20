@@ -12,7 +12,7 @@ const validateCode = () => {
   if (code.value === '1234') {
     currentPage.value = 'secret'
     error.value = ''
-  } else if (code.value === 'K4FE'){
+  } else if (code.value === 'K4F3'){
     currentPage.value = 'step-one'
     error.value = 'Code incorrect'
   }
