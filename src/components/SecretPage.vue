@@ -10,6 +10,7 @@ defineEmits(['go-home'])
       <p>Vous avez compris le principe du site, c'est bien...</p>
       
       <div class="secret-content">
+        <p>Vous n'avez pas un autre code secret qui traine quelque part ?</p>
         <p>Tip : Pensez à sauvegarder l'url de ce site web pour y accéder plus tard, vous en aurez besoin...</p>
       </div>
 
