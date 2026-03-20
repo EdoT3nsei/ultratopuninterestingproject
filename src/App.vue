@@ -1,6 +1,7 @@
 <script setup>
 import { ref } from 'vue'
 import SecretPage from './components/SecretPage.vue'
+import StepOne from './components/StepOne.vue'
 
 const code = ref('')
 const currentPage = ref('home')
@@ -12,7 +13,7 @@ const validateCode = () => {
     currentPage.value = 'secret'
     error.value = ''
   } else if (code.value === 'K4FE'){
-    currentPage.value = 'secret'
+    currentPage.value = 'step-one'
     error.value = 'Code incorrect'
   }
   {
@@ -53,6 +54,7 @@ const goHome = () => {
 
     <!-- Page secrète -->
     <SecretPage v-else-if="currentPage === 'secret'" @go-home="goHome" />
+    <StepOne v-else-if="currentPage === 'step-one'" @go-home="goHome" />
   </div>
 </template>
 
