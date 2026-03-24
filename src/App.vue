@@ -2,6 +2,8 @@
 import { ref } from 'vue'
 import SecretPage from './components/SecretPage.vue'
 import StepOne from './components/StepOne.vue'
+import StepTwo from './components/StepTwo.vue'
+import StepThree from './components/StepThree.vue'
 
 const code = ref('')
 const currentPage = ref('home')
@@ -14,6 +16,12 @@ const validateCode = () => {
     error.value = ''
   } else if (code.value === 'K4F3'){
     currentPage.value = 'step-one'
+    error.value = 'Code incorrect'
+  } else if (code.value === '24mai2026'){
+    currentPage.value = 'step-two'
+    error.value = 'Code incorrect'
+  } else if (code.value === 'Astrologie'){
+    currentPage.value = 'step-three'
     error.value = 'Code incorrect'
   }
   {
@@ -55,6 +63,9 @@ const goHome = () => {
     <!-- Page secrète -->
     <SecretPage v-else-if="currentPage === 'secret'" @go-home="goHome" />
     <StepOne v-else-if="currentPage === 'step-one'" @go-home="goHome" />
+    <StepTwo v-else-if="currentPage === 'step-two'" @go-home="goHome" />
+    <StepThree v-else-if="currentPage === 'step-three'" @go-home="goHome" />
+
   </div>
 </template>
 

@@ -6,13 +6,13 @@ defineEmits(['go-home'])
 <template>
   <div class="secret-page">
     <div class="content">
-      <h1>Bienvenue à l'étape 1</h1>
-      <p>Vous avez entré le bon code.</p>
+      <h1>Bienvenue à l'étape 2</h1>
+      <p>Vous avez entré le bon code, en même temps il était pas bien compliqué</p>
       
       <div class="secret-content">
-        <h2>Pour accéder à la prochaine étape :</h2>
-        <p>Envoyez "Saucisse" à votre bien-aimé.</p>
-        <p>Tip : Pensez à noter vos codes quelque part afin de mieux retrouver les éventuellesinformations dont vous aurez besoin plus tard.</p>
+        <h2>Le prochain indice devrait avoir quelque chose à faire avec le 24 mai...</h2>
+        <p>Cherchez bien... Vous devriez peut-être vous creuser un peu la tête.</p>
+        <p>Tip : Pas besoin d'attendre jusqu'au 24 mai...</p>
       </div>
 
       <button @click="$emit('go-home')" class="back-btn">
